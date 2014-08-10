@@ -89,7 +89,7 @@
 			#work{ background: url(../img/wrkactive.png) center no-repeat !important;}
 	
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-	#work{ background:url(../img/wrkactive@2x.png) center no-repeat !important; -webkit-background-size: auto 25px ; -moz-background-size: auto 25px ;  background-size: auto 25px ; }
+	#work{ background:url(../img/wrkactive@2x.png) center no-repeat !important; -webkit-background-size: auto 25px ; -moz-background-size: auto 25px ;  background-size: auto 25px !important; }
 	}
 	
 			</style>
