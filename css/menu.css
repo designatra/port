@@ -1,0 +1,254 @@
+html .ui-body-a{
+	font-family: 'Roboto', sans-serif;
+	text-shadow:none;
+}
+.ui-body-a{
+	/**background: url(../img/geowallpaper.jpg) no-repeat center center fixed !important;
+	-webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;**/
+background: rgba(0,133,120,1) !important;
+background: -moz-linear-gradient(top, rgba(0,133,120,1) 0%, rgba(0,169,152,1) 100%)!important;
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,133,120,1)), color-stop(100%, rgba(0,169,152,1)))!important;
+background: -webkit-linear-gradient(top, rgba(0,133,120,1) 0%, rgba(0,169,152,1) 100%)!important;
+background: -o-linear-gradient(top, rgba(0,133,120,1) 0%, rgba(0,169,152,1) 100%)!important;
+background: -ms-linear-gradient(top, rgba(0,133,120,1) 0%, rgba(0,169,152,1) 100%)!important;
+background: linear-gradient(to bottom, rgba(0,133,120,1) 0%, rgba(0,169,152,1) 100%)!important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008578', endColorstr='#00a998', GradientType=0 )!important;
+
+/**background-image: linear-gradient(bottom, #198192 32%, #359BB0 66%, #50BAD4 83%)!important;
+background-image: -o-linear-gradient(bottom, #198192 32%, #359BB0 66%, #50BAD4 83%)!important;
+background-image: -moz-linear-gradient(bottom, #198192 32%, #359BB0 66%, #50BAD4 83%)!important;
+background-image: -webkit-linear-gradient(bottom, #198192 32%, #359BB0 66%, #50BAD4 83%)!important;
+background-image: -ms-linear-gradient(bottom, #198192 32%, #359BB0 66%, #50BAD4 83%)!important;
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.32, #198192),
+	color-stop(0.66, #359BB0),
+	color-stop(0.83, #50BAD4)
+);**/
+}
+
+.ui-body-b{
+	background: #0077ab !important;
+}
+
+.ui-content{
+	padding:0 !important;
+}
+.wrapper{
+	width:920px;
+	margin:0 auto;
+	padding: 20px 20px 0;
+	overflow:hidden;
+}
+
+#navbar{
+	height:50px;
+	width:100%;
+	background: rgba(255, 255, 255, 0); 
+}
+
+#menu_btn{
+	width:50px;
+	height:50px;
+	float:left;
+	background:url(../img/menu-btn.png) center no-repeat;
+	border:none;
+}
+
+#navbar header{
+	margin:0 auto;
+	width:250px;
+	text-align:center;
+	padding:8px 0 0 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	font-size:24px;
+	letter-spacing:3px;
+	color:#fff;
+	text-shadow:none;
+}
+
+ul{
+	display:inline;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.icns{
+	float:left;
+	width:100px;
+	height:100px;
+	margin:42px;
+	text-align:center;
+}
+
+.icns span{
+	font-weight:400;
+	color:#fff;
+	text-shadow: 0px 1px 3px #555;
+        filter: dropshadow(color=#555, offx=0, offy=1);
+	margin-top:5px;
+	display:block;
+	font-size:14px;
+}
+
+/**** KP APP ***/
+#kpapp .ui-body-a{
+	background: #0077ab !important;
+		
+}
+
+#kpapp article{
+	height:600px;
+	width:100%;
+	display:block;
+}
+
+#kpicn{
+	background:url(../img/kp-icon.png) no-repeat center;
+	margin:50px auto 0 auto;
+	display:block;	
+	width:180px;
+	height:180px;
+}
+
+#kpver{
+	background:url(../img/kp3ver.png) no-repeat top center;
+	margin:10px 0 0 0;
+	float:left;
+	width:500px;
+	height:655px;
+	z-index:2;
+	position:relative;
+}
+
+#kpapp #card_1{
+
+}
+
+#kpapp #card_1 .cntnt{
+	margin:80px 0 0 20px;
+	width:400px;
+	float:right;
+}
+
+#kpapp #card_1 header{
+	font-size:36px;
+	text-align:center;
+	color:#fff;
+	letter-spacing:3px;
+	margin-top:10px;
+	font-weight:100;
+}
+
+#kpapp #card_1 section{
+	color:#fff;
+	line-height:28px;
+	text-align:center;
+	margin:20px 0 0 0;
+	font-size:16px;
+	font-weight:400;
+}
+
+#kpapp #card_2{
+	background:#fff;
+	height:inherit !important;
+}
+
+#kpapp #card_2 .cntnt{
+	margin:240px 0 0 20px;
+	width:215px;
+	float:left;
+}
+
+#kpapp #card_2 section{
+	color:#333;
+	line-height:24px;
+	text-align:center;
+	margin:65px 0 0 0;
+	font-size:15px;
+	font-weight:400;
+}
+
+
+#kpapp .mail{
+	background:url(../img/kp-mail.png) no-repeat top center;
+	margin-left:0 !important;
+}
+
+#kpapp .appntmnt{
+	background:url(../img/kp-appntmnt.png) no-repeat top center;
+}
+
+#kpapp .phrmc{
+	background:url(../img/kp-phrmc.png) no-repeat top center;
+}
+
+#kpapp .mmr{
+	background:url(../img/kpmmr.png) no-repeat top center;
+}
+
+#kp3dev{
+	background:url(../img/kp-3-devices.png) no-repeat top center;
+	width:100%;
+	height:440px;
+	float:left;
+	margin-top:80px;	
+}
+
+
+#kpapp #card_3{
+	background:#f39121;
+	height:855px;
+	position:relative;
+	z-index:2;
+}
+
+#kpdevappntmnt{
+	background:url(../img/kpdevappntmnt.png) no-repeat center;
+	width:100%;
+	display:block;
+	height:655px;
+	padding:90px 0;
+}
+
+#kpdevappntmnt span{
+	font-size:40px;
+	text-align:left;
+	color:#fff;
+	letter-spacing:3px;
+	margin-top:10px;
+	font-weight:100;
+	font-family: 'Roboto Condensed', sans-serif;
+	position:relative;
+	z-index:1;
+	text-transform:uppercase;
+	margin:15% auto 0;
+	display:block;
+	width:880px;
+}
+
+#kpapp #card_3 section{
+	color:#fff;
+	line-height:28px;
+	text-align:center;
+	margin:20px 0 0 0;
+	font-size:16px;
+	font-weight:400;
+}
+
+/*****************************************************************320CSS********************************************************/
+@media (max-width : 480px) {
+	.wrapper {
+	width: 320px;
+	margin: 0px auto;
+	padding:0;
+}
+}

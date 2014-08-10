@@ -1,0 +1,4731 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: url(../img/bg.png);
+	padding:0;
+	margin:0;
+	font-size:100%;
+	font-family: "pragmatica-web",sans-serif;
+	color:#555;
+}
+
+* {
+	margin: 0;
+	padding:0;
+}
+html, body {
+	height: 100%;
+}
+
+a	{
+	text-decoration:none;
+	}
+	
+a:hover p{
+	color:#6ADBD8;
+}
+	
+ul,li{
+	list-style-type:none;
+}
+	
+.clear {
+	width: 100%;
+	height: 1px;
+	margin: 0 0 -1px;
+	clear: both;
+}
+
+.en.none{
+	display:none;	
+}
+
+h1{
+	font-family: "pragmatica-web",sans-serif;
+	float:left;
+	color:#fff;
+	font-weight:400;
+}
+
+h2{
+	float:left;
+	padding:0;
+	margin:0;
+	font-family: "nimbus-sans-condensed",sans-serif;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+h3{
+	font-family: "pragmatica-web",sans-serif;
+	margin:0;
+	padding:0;
+	color:#6ADBD8;
+	font-weight:400;
+}
+
+h4{
+	font-family: "pragmatica-web",sans-serif;
+	margin:0;
+	padding:0;
+	color:#fff;
+	text-transform:lowercase;
+	background:#6ADBD8;
+	padding:0 10px;
+	float:left;
+	font-weight:400;
+}
+
+h5{
+	font-family: "nimbus-sans-condensed",sans-serif;
+	font-size:30px;
+	color:#fff;	
+	display:block;
+	margin:0;
+	padding:0;
+	font-weight:400;
+}
+
+h6{
+	font-family: "pragmatica-web",sans-serif;
+	font-size:90px;
+	color:#6ADBD8;	
+	display:block;
+	margin:0;
+	padding:0;
+	font-weight:400;
+}
+
+.header7{
+	margin: 10px 0;
+	padding:0;
+	font-family: "minion-pro", serif;
+	color: #333;
+	font-style: italic;
+	font-size:24px;
+	text-align:center;
+	float:left;
+	width:100%;
+}
+
+#hght{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -181px; /* the bottom margin is the negative value of the footer's height */	
+}
+
+#navbar {
+	height:45px;
+	width:100%;
+	background:#262626;
+}
+
+.wrapper, .wrapper2, .wrapper3{
+	overflow:hidden;
+}
+
+#Alogo{
+	float:left;
+}
+
+#navigation {
+	float:right;
+}
+
+#navigation a{
+	float:left;
+}
+
+#logo{
+	display: block;
+	width: 100px;
+	height: 28px;
+	background: url(../img/Logo.png) bottom no-repeat;
+	text-indent: -99999px;
+	position:relative;
+}
+
+#logo span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/Logo.png)  top no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 2s;
+        -moz-transition:    opacity 2s;
+        -o-transition:      opacity 2s;
+}
+
+#logo:hover span{
+	opacity: 1;
+}
+
+#about{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/about.png) bottom no-repeat;
+	position:relative;
+}
+
+#about span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/about.png)  top no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -o-transition:      opacity 1s;
+}
+
+#about:hover span{
+	opacity: 1;
+}
+
+#work{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/work.png) bottom no-repeat;
+	position:relative;
+}
+
+#work span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/work.png)  top no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -o-transition:      opacity 1s;
+}
+
+#work:hover span{
+	opacity: 1;
+}
+
+#blog{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/blog.png) bottom no-repeat;
+	position:relative;
+}
+
+#blog span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/blog.png)  top no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -o-transition:      opacity 1s;
+}
+
+#blog:hover span{
+	opacity: 1;
+}
+
+.nopadding{
+	padding:0 !important;
+}
+.push {
+	height: 181px; /* .push must be the same height as .footer */
+}
+
+#ftnav{
+	float:left;
+	margin:30px 0;
+	height:40px;
+}
+
+#ftnav a{
+	float:left;
+	padding:10px 50px 10px 0;
+	text-transform:uppercase;	
+	font-family: "pragmatica-web",sans-serif;
+	font-size:14px;
+	color:#121617;
+}
+
+#socialbar{
+	width:100%;
+	padding:20px 0;
+	background: #444;
+	height:181px;
+}
+
+#socialbar hr{
+	width:100%;
+	display:block;
+	border:1px solid #fff; 
+	float:left;	
+}
+
+#socialbar h4{
+	float:right;
+	background:#fff;
+	color:#333;
+	margin:5px 0;
+}
+
+
+#socialnav a{
+	margin: 0 0 0 10px;
+}
+
+#cpyrght{
+	font-family: "nimbus-sans-condensed",sans-serif;
+	font-size:14px;
+	color:#121617;	
+	float:right;
+	margin:5px 0;
+}
+
+#love{
+	font-family: "pragmatica-web",sans-serif;
+	font-size:14px;
+	color:#121617;	
+	float:left;
+	margin:5px 0;
+	width:300px;
+}
+#love p{
+	float:left;	
+	padding: 3px 20px 0 5px;
+}
+
+#love iframe{
+	float: left;
+	padding: 0;
+	margin: 2px 0;
+}
+
+#heart{
+	background:url(../img/heart.png) center no-repeat;
+	width:21px;
+	height:21px;
+	float:left;	
+	display:block;
+	padding: 0 5px 0 0;
+	margin: 2px 0 0 0;
+}
+
+#socialnav{
+	float:right;
+	display:block;
+	margin:30px 0;
+	height:40px;
+}
+
+#socialnav a{
+	float:left;
+}
+
+#scltitle{
+	font-family: "nimbus-sans-condensed",sans-serif;
+	float:left;
+	font-size:24px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight:700;
+	text-shadow:0 1px 0 #000;
+}
+
+
+
+#instagram{
+	background:url(../img/instagram.png);
+	display:block;
+	width:40px;
+	height:40px;
+}
+
+#facebook{
+	background:url(../img/facebook.png);
+	display:block;
+	width:40px;
+	height:40px;
+}
+
+#twitter{
+	background:url(../img/twitter.png);
+	display:block;
+	width:40px;
+	height:40px;
+}
+
+#googleplus{
+	background:url(../img/googleplus.png);
+	display:block;
+	width:40px;
+	height:40px;
+}
+
+#linkedin{
+	background:url(../img/linkedin.png);
+	display:block;
+	width:40px;
+	height:40px;
+}
+
+#gmail{
+	background:url(../img/gmail.png);
+	display:block;
+	width:40px;
+	height:40px;
+}
+
+#welcome{
+	display:block;
+}
+
+#atra{
+	background:url(../img/crossplatform.png);
+	width:689px;
+	height:457px;
+	float:right;
+}
+
+#affiliates{
+	background:#121617;
+	margin:0 auto;
+	padding:50px 0;
+}
+
+#affiliates hr{
+	height:3px;
+	border-style:none;
+	background: #6ADBD8;
+	width:100%;
+	margin:0 0 5px 0;
+}
+
+#affiliates h4{
+	color:#000;
+}
+
+#afflist{
+	float:left;	
+}
+
+#afflist a{
+	display:inline-block;
+}
+
+#affhom, #affbmrkd, #affdn, #affjpx, #affsahir{
+	display:block;
+	margin:0 auto;
+	width: 140px;
+	height: 140px;
+}
+
+#affhom{
+	background:url(../img/affhom.png) center no-repeat;
+}
+
+#affbmrkd{
+	background:url(../img/affbmrkd.png) center no-repeat;
+}
+
+#affdn{
+	background:url(../img/affdn.png) center no-repeat;
+}
+
+#affjpx{
+	background:url(../img/affjpx.png) center no-repeat;
+}
+#affsahir{
+	background:url(../img/affsahir.png) center no-repeat;
+}
+
+/*test*/
+.lft{
+	float:left;
+}
+
+.rght{
+	float:right;
+}
+
+.lineone{
+	width:100%;
+	padding:0;
+	margin:1px 0;
+	height:2px;
+}
+
+.linetwo{
+	width:90%;
+	padding:0;
+	margin:1px 0;
+	height:2px;
+}
+
+.linethree{
+	width:80%;
+	padding:0;
+	margin:1px 0;
+	height:2px;
+}
+hr{
+	margin:0;
+}
+
+
+
+/*********************************************ABOUT PAGE************************************************************************/
+
+h3 span{
+	color:#333;
+}
+
+#me h2 {
+	float:left;
+	text-shadow: 0px 3px 3px #000000;
+    filter: dropshadow(color=#000000, offx=0, offy=3);   
+}
+
+.circle{
+	background:#6ADBD8;
+	float:left; 
+	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    0px 3px 5px rgba(0, 0, 0, 0.75);
+	box-shadow:         0px 3px 5px rgba(0, 0, 0, 0.75);
+}
+
+.circle p{
+	font-family: "minion-pro", serif;
+	color:#fff;
+	font-style:italic;
+	float:left;
+	text-transform:lowercase;
+}
+
+#moreme{
+	width:100%;
+	background:#121617;
+}
+	
+	
+#info{
+	float:left;
+}
+	
+#info p{
+	font-family: "minion-pro", serif;
+	color:#CCC;
+	font-style:normal;
+	margin:10px 0 30px;
+}
+
+#abtme{
+	width:100%;
+	overflow:hidden;	
+}
+
+#abtme p span{
+	color:#333;
+}
+#resume{
+	float:right;	
+}
+
+.rngbttn{
+	width:56px;
+	height:56px;
+	-webkit-border-radius:29px;
+	-moz-border-radius:29px;
+	border-radius:29px;
+	border:solid 2px #fff;
+	margin:0 0 0 50px;
+	float:left;
+}
+
+.rngbttn p{
+	margin:0;
+}
+
+#pdf{
+	background:url(../img/pdf%20icon.png) top no-repeat;
+}
+
+#pdf p{
+	font-family: "pragmatica-web",sans-serif;
+	margin:30px 0 0 16px;
+	color:#fff;
+	font-size:16px;
+}
+
+#html p{
+	font-family: "pragmatica-web",sans-serif;
+	margin:-2px 0 0 0;
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+}
+
+#html span{
+	font-size:25px;
+	color:#fff;
+	text-align:center;
+	width:55px;
+	display:block;
+	margin:0;
+}
+
+#rtitle{
+	font-family: "pragmatica-web",sans-serif;
+	float:left;
+	font-size:33px;
+	color:#fff;	
+	margin:8px 50px 8px 0;
+}
+
+
+/*********************************************WORK PAGE**************************************************************************/
+
+.title{
+	font-family: "nimbus-sans-condensed",sans-serif;
+	font-size:30px;
+	color:#fff;	
+	margin: 10px auto 0;
+	width:1240px;
+	display:block;
+	font-weight:400;
+}
+
+
+#wrk h2 {
+	float:left;
+	text-shadow: 0px 3px 3px #000000;
+    filter: dropshadow(color=#000000, offx=0, offy=3);   
+}
+
+
+/*PORTFOLIO*/
+.boundingBox{
+	margin:0 auto;
+	padding:0;
+	width:1240px;
+}
+/* Content */
+
+#contentWrapper{
+	margin-bottom:40px;
+}
+
+#content{ 
+padding:0;
+}
+
+ul#portfolio-filter{ 
+	list-style:none;
+	width: 100%;
+	border-top: 3px #6ADBD8 solid;
+	padding:5px 0 0 0; 
+	margin:0;
+}
+ul#portfolio-filter li{ 
+	display: inline;
+ }
+ul#portfolio-filter a{
+	font-family: "pragmatica-web",sans-serif;
+	color: #fff;
+	text-decoration:none;
+	text-transform:lowercase;
+	background:#666;
+	padding:2px 5px;
+	font-weight:400;
+}
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ 
+	color: #6ADBD8;
+ }
+ul#portfolio-filter a.current{ 	
+	background:#6ADBD8;
+	color:#000;
+ }
+
+ul#portfolio-list{ 
+	margin: 36px 0 0 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+ul#portfolio-list li{ 
+	width: 300px; 
+	height: 200px; 
+	display: block; 
+	float: left; 
+	margin: 0 5px 10px; 
+	overflow: hidden;
+	-webkit-box-shadow: 0 12px 10px -10px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black; 
+}
+ul#portfolio-list li a{ 
+	display: block; 
+	width: 300px; 
+	height: 200px; 
+	overflow: hidden;
+	position:relative; 
+
+}
+
+ul#portfolio-list li a h4{
+	font-size:14px;
+	margin:0 5px 0 0;
+	padding:7px;
+	opacity: 1;
+	color:#fff;
+	background:#111;
+	font-weight:300;
+}
+
+#atrapor{
+	background:url(../img/atrapor.jpg);	
+	position:relative;
+	opacity:1;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+	display:block;
+}
+
+#hompor{
+	background:url(../img/hompor.jpg);	
+	position:relative;
+	opacity:1;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+	display:block;
+}
+
+#dnpor{
+	background:url(../img/dnpor.jpg);	
+	position:relative;
+	opacity:1;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+	display:block;
+}
+
+#enlightpor{
+	background:url(../img/enlightpor.jpg);	
+	position:relative;
+	opacity:1;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+	display:block;
+}
+
+.details{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+}
+
+.details:hover{
+	opacity: 1;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+}
+
+.details{
+		width:300px;
+		height:200px;
+		background: url(../img/trans.png);
+		color:#333;
+		text-align:center;
+}
+
+.caption{
+	float: right;
+    right: 50%;
+    position: relative;
+	top:50%;
+	margin:-10px 0 0 0;
+}
+
+.cntr{
+	float: right;
+    right: -50%;
+    position: relative;
+}
+
+/*********************************************ATRA**************************************************************************/
+#portfolio{
+	width:1240px;
+	margin:0 auto;	
+	overflow:hidden;
+}
+
+#portfolio h5{
+	float:left;
+	margin:20px 0 5px 0;	
+}
+
+#design{
+	width:100%;
+	float:left;
+}
+
+#design h4{
+	font-size:14px;
+	padding:4px 7px;
+	margin:0 0 5px 0;
+}
+
+#design hr{
+	height:3px;
+	border-style:none;
+	background: #6ADBD8;
+	width:100%;
+	margin:0 0 5px 0;
+}
+
+#brand{
+	margin:5px 0 0 0;
+	float:left;
+	width:100%;
+}
+
+#brand h4{
+	font-size:14px;
+	padding:4px 7px;
+	margin:0 0 5px 0;
+}
+
+.atra #brandimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:698px;
+	background:url(../img/atrabranding1240.jpg);
+}
+
+.atra #webimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:468px;
+	background:url(../img/atraweb.png);
+}
+
+.atra #photoimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:500px;
+	background:url(../img/sfatra1240.jpg);
+}
+
+.atra #printimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:600px;
+	background:url(../img/atrabc1240.jpg);
+}
+
+.icons{
+	width:300px;
+	height:52px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin:10px 0 20px 20px;	
+}
+
+#cross3{
+	background: url(../img/3crossicons.jpg) left no-repeat;
+	width:100px;
+	height:52px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#cross3 p{
+	font-family: "pragmatica-web",sans-serif;
+	position:relative;
+	font-weight:700;
+	font-size:15px;
+	margin:-25px 0 0 0;
+}
+
+#yt{
+	background: url(../img/youtube.png) left no-repeat;
+	width:52px;
+	height:52px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#canon{
+	background: url(../img/cameraicon.jpg) left no-repeat;
+	width:62px;
+	height:52px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#comp{
+	background:url(../img/comp.jpg) left no-repeat;
+	width:100px;
+	height:52px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#comp p{
+	font-family: "pragmatica-web",sans-serif;
+	position:relative;
+	font-weight:700;
+	font-size:16px;
+	margin:-25px 0 0 0;
+}
+
+.link{
+	background: url(../img/linkicon.jpg) left no-repeat;
+	width:52px;
+	height:52px;
+	float:left;
+	margin:0 0 0 10px;
+	padding:0;
+}
+.link p{
+	font-family: "pragmatica-web",sans-serif;
+	position:relative;
+	font-weight:700;
+	font-size:16px;
+	margin:18px 0 0 40px;
+	color:#333;
+}
+
+.comments{
+	background:#FFF;
+	margin:0 0 100px 0;
+	float:left;
+	position:relative;
+	width:1240px;
+	-webkit-box-shadow: 0 12px 10px -10px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.comments h3{
+	Margin:20px 20px 10px 20px;	
+}
+.comments p a{
+	color:#6ADBD8;
+}
+
+.clmn_1{
+	margin:0px 0 20px 20px;
+	float:left;
+	width:500px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;
+}
+
+.clmn_2{
+	margin:0px 20px 0px 20px;
+	float:left;
+	width:500px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+.clmn_f{
+	margin:0px 20px 0px 20px;
+	float:left;
+	width:1000px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+.comments ul{
+	font-family: "pragmatica-web",sans-serif;
+	font-weight:400;
+	font-size:14px;
+}
+
+.comments ul li span{
+	font-family: "pragmatica-web",sans-serif;
+	font-weight:700;
+	font-size:14px;
+	color:#444;
+	letter-spacing:.1em;
+}
+
+.cmmntinfo{
+	float:left;
+	margin:0 0 80px 0;
+}
+
+.portnav{
+	width:115px;
+	float:right;
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin:0 20px 20px 0px;	
+}
+
+.portnav2{
+	width:115px;
+	float:right;
+	margin:5px 20px 5px 0;
+}
+
+.ring2{
+	width:42px;
+	height:42px;
+	-webkit-border-radius:22px;
+	-moz-border-radius:22px;
+	border-radius:22px;
+	border:solid 2px #d8d8d8;
+	float:right;
+	margin:5px 5px;
+}
+
+.forward{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:100;
+	font-size:30px;
+	color:#6ADBD8;
+	margin:4px 0 0 13px;
+	padding:0;
+	background:none;
+}
+
+.backward{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:100;
+	font-size:30px;
+	color:#6ADBD8;
+	margin:4px 0 0 10px;
+	padding:0;
+	background:none;
+}
+
+.up{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:100;
+	font-size:30px;
+	color:#6ADBD8;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform:rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(/* IE6–IE9 */rotation=3);
+	margin:-10px 0;
+	padding:0;
+	background:none;
+}
+
+.upup{
+	font-family: "nimbus-sans-condensed",sans-serif;
+	font-weight:300;
+	font-size:24px;
+	color:#6ADBD8;
+	margin:21px 8px;
+	padding:0;
+	background:none;
+	line-height:0;
+}
+
+.down{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:100;
+	font-size:30px;
+	color:#6ADBD8;
+	-webkit-transform:rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform:rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(/* IE6–IE9 */rotation=1);
+	margin:0;
+	padding:16px 0;
+	background:none;
+}
+
+#design .portnav hr{
+	height:1px;
+	border-style:none;
+	background: #A3A3A3;
+	width:100%;
+	margin:25px 0;
+}
+
+#website, #cinema, #photo, #paper, #craft{
+	float:left;
+	width:100%;
+}
+
+#website h4{
+	font-size:14px;
+	padding:4px 7px;
+	margin:5px 0;
+}
+
+iframe{
+	float:left;	
+}
+
+#portsec{
+	margin:50px auto;	
+	overflow:hidden;
+}
+
+/*********************************************HOM**************************************************************************/
+
+.hom #brandimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:500px;
+	background:url(../img/hombranding1240.jpg);
+}
+
+.hom #webimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:896px;
+	background:url(../img/homweb1240.jpg);
+}
+
+.hom #photoimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:764px;
+	background:url(../img/homphoto1240.jpg);
+}
+
+.hom #printimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:600px;
+	background:url(../img/homprint1240.jpg);
+}
+
+/*********************************************DENICE**************************************************************************/
+
+.denice #webimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:896px;
+	background:url(../img/dnweb1240.jpg);
+}
+
+/******************************************ENLIGHTENMENT*************************************************************************/
+
+.en #crftimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:580px;
+	background: url(../img/encrft1240.jpg) no-repeat center #fff;
+}
+
+
+/****************************************************** 1280CSS ***********************************************************/
+@media (min-width : 1280px) {
+
+.wrapper {
+	width: 1280px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper2{
+	width: 1240px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper3{
+	width:1080px;
+	margin: 0 auto;
+}
+
+h1{
+	font-size:16px;
+	line-height:28px;
+}
+
+h2{
+	font-size:61px;
+	font-weight:700;
+	text-align:left;
+}
+
+h3{
+	font-size:32px;
+}
+
+h4{
+	font-size:14px;
+}
+
+h6{
+	margin:90px 0 0;	
+}
+
+#Alogo{
+	margin:10px 0 0;
+}
+
+#navigation{
+	margin:10px 0 0;
+}
+
+#navigation a{
+	margin-right:55px;
+}
+
+#navigation a span{
+	font-family: "pragmatica-web",sans-serif;
+	width:50px;
+	float:left;
+	font-size:12px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff;
+	opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition:    opacity 0.5s;
+        -o-transition:      opacity 0.5s;
+	text-shadow:0 1px 0 #000;
+	padding:5px 0 0 25px;
+}
+	
+#socialnav a{
+	margin:0 0 0 10px;
+}
+
+#atra{
+	background:url(../img/crossplatform.png);
+	width:689px;
+	height:468px;
+	float:right;
+}
+
+#welcome h4{
+	margin:55px 0 0 40px;    
+}
+#welcome h1{
+	margin:0;
+}
+
+#welcome header{
+	width:551px;
+	float:left;
+	}
+
+#welcome .circle{
+	margin:60px 0 0 0;
+}
+#welcome .circle p{
+	padding:42px 30px;
+}
+
+#affiliates{
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+
+.lines{
+	width:430px;
+	float:left;
+	margin:92px 0;
+}
+
+#ring{
+	width:192px;
+	height:192px;
+	-webkit-border-radius:96px;
+	-moz-border-radius:96px;
+	border-radius:96px;
+	border:solid 2px #fff;
+	float:left;
+}
+
+#afflist a{
+	float:left;
+	padding:0 50px;
+	width: 140px;
+}
+
+
+
+/*****************************************************************ABOUT ME*****************************************************/
+
+#me{
+	background:url(../img/me.png) center no-repeat;
+	height:400px;
+	margin:60px  0 0 0;
+}
+
+#me header {
+	margin:150px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:1000px;
+}
+
+.circle {
+	width:150px;
+	height:150px;
+	-webkit-border-radius:75px;
+	-moz-border-radius:75px;
+	border-radius:75px;
+}
+.circle p {
+	font-size:48px;
+	padding:42px 20px;
+	margin:0;
+}
+
+#me h2{
+	margin: 27px 0 27px 60px;
+	width:780px;	
+	line-height:48px;
+	letter-spacing:1px;
+}
+
+#abtme{
+	margin:60px 0;
+}
+
+#info p{
+	font-size:16px;
+	line-height:28px;
+	margin:20px 0 30px;
+}
+
+/**************************************************************************WORK*****************************************************/
+
+#wrk{
+	margin:60px  0;
+}
+
+#wrk header {
+	margin:30px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:1000px;
+}
+
+#wrk .circle p {
+	padding:43px 28px;
+}
+
+#wrk h2{
+	margin: 27px 0 27px 20px;
+	width:830px;	
+	line-height:48px;
+	letter-spacing:1px;
+}
+/*Portfolio*/
+.boundingBox{
+	margin:5px auto;
+	padding:0;
+	width:1240px;
+}
+/* Content */
+
+#content{ 
+padding:0;
+}
+
+ul#portfolio-filter{ 
+	list-style:none;
+	width: 100%;
+	border-top: 3px #6ADBD8 solid;
+	padding:5px 0 0 0; 
+	margin:0;
+}
+ul#portfolio-filter a{
+	font-size:14px;
+}
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ 
+	color: #6ADBD8;
+ }
+ul#portfolio-filter a.current{ 	
+	background:#6ADBD8;
+	color:#000;
+ }
+
+ul#portfolio-list{ 
+	margin: 36px 0 0 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+ul#portfolio-list li{ 
+	width: 300px; 
+	height: 200px; 
+	display: block; 
+	float: left; 
+	margin: 0 5px 10px; 
+	overflow: hidden; 
+}
+ul#portfolio-list li a{ 
+	display: block; 
+	width: 300px; 
+	height: 200px; 
+	overflow: hidden; 
+}
+
+/*********************************************ATRA**************************************************************************/
+#portfolio{
+	width:1240px;
+}
+
+.comments{
+	width:1240px;
+}
+
+.atra #brandimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:698px;
+	background:url(../img/atrabranding1240.jpg);
+}
+
+.atra #webimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:468px;
+	background:url(../img/atraweb1240.jpg);
+}
+
+.atra #photoimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:500px;
+	background:url(../img/sfatra1240.jpg);
+}
+
+.atra #printimg{
+	margin:0;	
+	float:left;	
+	width:1240px;
+	height:600px;
+	background:url(../img/atrabc1240.jpg);
+}
+
+.clmn_1{
+	float:left;
+	width:500px;
+	font-size:14px;
+	line-height:24px;
+	margin:0 20px;
+}
+
+.clmn_2{
+	float:left;
+	width:500px;
+	font-size:14px;
+	line-height:24px;	
+}
+
+.portnav{
+	width:115px;
+	float:right;
+	position:absolute;
+	right:0;
+	bottom:0;	
+}
+
+.ring2{
+	width:42px;
+	height:42px;
+	-webkit-border-radius:22px;
+	-moz-border-radius:22px;
+	border-radius:22px;
+	border:solid 2px #d8d8d8;
+	float:right;
+	margin:5px 5px;
+}
+
+.up{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:100;
+	font-size:30px;
+	color:#6ADBD8;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform:rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(/* IE6–IE9 */rotation=3);
+	margin:-10px 0;
+	padding:0;
+	background:none;
+}
+
+.down{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:100;
+	font-size:30px;
+	color:#6ADBD8;
+	-webkit-transform:rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform:rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(/* IE6–IE9 */rotation=1);
+	margin:0;
+	padding:16px 0;
+	background:none;
+}
+
+#website, #cinema, #photo, #paper{
+	float:left;
+	width:100%;
+}
+
+iframe{
+	float:left;	
+}
+
+}
+
+/*******************************************************************960CSS*****************************************************/
+@media (min-width : 960px) and (max-width : 1280px) {
+	.wrapper {
+	width: 960px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper2{
+	width: 920px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper3{
+	width:820px;
+	margin: 0 auto;	
+}
+
+h1{
+	font-size:16px;
+	line-height:28px; 
+}
+
+h2{
+	font-size:48px;
+	text-align:left;
+}
+
+h3{
+	font-size:30px;
+}
+
+h4{
+	font-size:14px;
+}
+
+h6{
+	margin:50px 0 0;	
+}
+
+#Alogo{
+	margin:10px 0 0;
+}
+
+#navigation{
+	margin:10px 0 0;
+}
+
+#navigation a{
+	margin-right:55px;
+}
+
+#navigation a span{
+	font-family: "pragmatica-web",sans-serif;
+	width:50px;
+	float:left;
+	font-size:12px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff;
+	opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition:    opacity 0.5s;
+        -o-transition:      opacity 0.5s;
+	text-shadow:0 1px 0 #000;
+	padding:5px 0 0 25px;
+}
+
+
+#atra{
+	background:url(../img/crossplatform960.png);
+	width:550px;
+	height:365px;
+	float:right;
+}
+
+#welcome h4{
+	margin:55px 0 0 40px;    
+}
+#welcome h1{
+	margin:0;
+}
+
+#welcome header{
+	width:370px;
+	float:left;
+	}
+
+#welcome .circle{
+	margin:50px 0 0 0;
+}
+#welcome .circle p{
+	padding:33px 23px;
+}
+
+#affiliates{
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+
+.lines{
+	width:312px;
+	float:left;
+	margin:92px 0;
+}
+
+#ring{
+	width:192px;
+	height:192px;
+	-webkit-border-radius:96px;
+	-moz-border-radius:96px;
+	border-radius:96px;
+	border:solid 2px #fff;
+	float:left;
+}
+
+#afflist a{
+	float:left;
+	padding:0 24px;
+	width: 140px;
+}
+
+/**************************************************************************ABOUT ME*****************************************************/
+
+#me{
+	background:url(../img/me.png) center no-repeat;
+	height:400px;
+	margin:60px  0 0 0;
+}
+
+#me header {
+	margin:150px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:800px;
+}
+
+.circle {
+	width:120px;
+	height:120px;
+	-webkit-border-radius:60px;
+	-moz-border-radius:60px;
+	border-radius:60px;
+}
+.circle p {
+	font-size:40px;
+	padding:33px 15px;
+	margin:0;
+}
+
+#me h2{
+	margin: 20px 0 10px 40px;
+	width:630px;	
+	line-height:40px;
+	letter-spacing:1px;
+}
+
+#abtme{
+	margin:60px 0;
+}
+
+#info p{
+	font-size:16px;
+	line-height:28px;
+}
+
+/**************************************************************************WORK*****************************************************/
+
+.title{
+	font-size:30px;
+	color:#fff;	
+	margin: 10px auto 0;
+	width:950px;
+	display:block;
+}
+
+#wrk{
+	margin:50px  0;
+}
+
+#wrk header {
+	margin:30px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:800px;
+}
+
+#wrk .circle p {
+	padding:33px 20px;
+}
+
+#wrk h2{
+	margin: 20px 0 20px 40px;
+	width:630px;	
+	line-height:40px;
+}
+
+/*Portfolio*/
+.boundingBox{
+	margin:5px auto;
+	padding:0;
+	width:950px;
+}
+/* Content */
+
+#content{ 
+padding:0;
+}
+
+ul#portfolio-filter{ 
+	list-style:none;
+	width: 100%;
+	border-top: 3px #6ADBD8 solid;
+	padding:5px 0 0 0; 
+	margin:0;
+}
+ul#portfolio-filter a{
+	font-size:14px;
+}
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ 
+	color: #6ADBD8;
+ }
+ul#portfolio-filter a.current{ 	
+	background:#6ADBD8;
+	color:#000;
+ }
+
+ul#portfolio-list{ 
+	margin: 36px 0 0 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+ul#portfolio-list li{ 
+	width: 300px; 
+	height: 200px; 
+	display: block; 
+	float: left; 
+	margin: 0 5px 10px; 
+	overflow: hidden; 
+}
+ul#portfolio-list li a{ 
+	display: block; 
+	width: 300px; 
+	height: 200px; 
+	overflow: hidden; 
+}
+
+/*********************************************ATRA**************************************************************************/
+#portfolio{
+	width:940px;
+}
+
+.comments{
+	width:940px;
+}
+
+.atra #brandimg{
+	margin:0;	
+	display:block;
+	width:940px;
+	height:529px;	
+	background:url(../img/atrabranding940.jpg);
+}
+
+.atra #webimg{
+	width:940px;
+	height:355px;
+	background:url(../img/atraweb940.jpg);
+}
+
+.atra #cinema iframe{
+	float:left;	
+	width:940px;
+	height:529px;
+}
+
+.atra #photoimg{	
+	width:940px;
+	height:379px;
+	background:url(../img/sfatra940.jpg);
+}
+
+.atra #printimg{
+	width:940px;
+	height:455px;
+	background:url(../img/atrabc940.jpg);
+}
+
+.clmn_1{
+	float:left;
+	width:380px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;
+	margin:0 20px;
+}
+
+.clmn_2{
+	float:left;
+	width:380px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+.clmn_f{
+	margin:0px 20px 0px 20px;
+	float:left;
+	width:700px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+#web img{
+	margin:0;	
+	float:left;
+}
+iframe{
+	float:left;	
+}
+
+/*********************************************HOM**************************************************************************/
+
+.hom #cinema iframe{
+	float:left;	
+	width:940px;
+	height:529px;
+}
+
+.hom #brandimg{
+	margin:0;	
+	float:left;	
+	width:940px;
+	height:379px;
+	background:url(../img/hombranding940.jpg);
+}
+
+.hom #webimg{
+	margin:0;	
+	float:left;	
+	width:940px;
+	height:679px;
+	background:url(../img/homweb940.jpg);
+}
+
+.hom #photoimg{
+	margin:0;	
+	float:left;	
+	width:940px;
+	height:579px;
+	background:url(../img/homphoto940.jpg);
+}
+
+.hom #printimg{
+	margin:0;	
+	float:left;	
+	width:940px;
+	height:455px;
+	background:url(../img/homprint940.jpg);
+}
+
+/*********************************************DENICE**************************************************************************/
+
+.denice #webimg{
+	margin:0;	
+	float:left;	
+	width:940px;
+	height:679px;
+	background:url(../img/dnweb940.jpg);
+}
+
+/******************************************ENLIGHTENMENT*************************************************************************/
+
+.en #crftimg{
+	margin:0;	
+	float:left;	
+	width:940px;
+	height:409px;
+	background: url(../img/encrft940.jpg) no-repeat center #fff;
+}
+
+}
+
+/*****************************************@2ximg960***********************************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width : 960px) and (max-width : 1280px) {
+
+#atra{
+	background:url(../img/crossplatform@2x.png);
+	width:550px;
+	height:365px;
+	float:right;
+	-webkit-background-size: 550px auto ;  
+	-moz-background-size: 550px auto  ;  
+  	background-size: 550px auto ;
+}
+
+.atra #brandimg{
+	background:url(../img/atrabranding@2x.jpg);
+	width:940px;
+	height:529px;
+	-webkit-background-size: 940px auto ;  
+	-moz-background-size: 940px auto;  
+  	background-size: 940px auto;
+}
+
+.atra #webimg{
+	background:url(../img/atraweb@2x.jpg);
+	width:940px;
+	height:355px;
+	-webkit-background-size: 940px auto ;  
+	-moz-background-size: 940px auto;  
+  	background-size: 940px auto;
+}
+
+.hom #brandimg{
+	width:940px;
+	height:379px;
+	background:url(../img/hombranding@2x.jpg);
+	-webkit-background-size: 940px auto ;  
+	-moz-background-size: 940px auto;  
+  	background-size: 940px auto;
+}
+
+.hom #photoimg{
+	width:940px;
+	height:579px;
+	background:url(../img/homphoto@2x.jpg);
+	-webkit-background-size: 940px auto ;  
+	-moz-background-size: 940px auto;  
+  	background-size: 940px auto;
+}
+
+.hom #webimg{
+	width:940px;
+	height:679px;
+	background:url(../img/homweb@2x.jpg);
+	-webkit-background-size: 940px auto ;  
+	-moz-background-size: 940px auto;  
+  	background-size: 940px auto;
+}
+
+.denice #webimg{
+	width:940px;
+	background:url(../img/dnweb@2x.jpg);
+	-webkit-background-size: 940px auto ;  
+	-moz-background-size: 940px auto;  
+  	background-size: 940px auto;
+}
+}
+
+/*************************************************************720CSS******************************************************/
+@media (min-width : 720px) and (max-width : 960px) {
+
+.wrapper {
+	width: 720px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper2{
+	width: 680px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper3{
+	width:620px;
+	margin: 0 auto;
+
+}
+
+h1{
+	font-size:15px;
+	line-height:26px;
+}
+
+h2{
+	font-size:39px;
+	text-align:left;
+}
+
+h3{
+	font-size:28px;
+}
+
+h4{
+	font-size:14px;
+}
+
+h6{
+	font-size:72px;
+	margin:20px 0 0;	
+}
+
+#navbar{
+	height:45px;
+}
+
+#Alogo{
+	margin:10px 0 0;
+}
+
+#navigation{
+	margin:10px 0 0;
+}
+
+#navigation a{
+	margin-left:25px;
+}
+
+#navigation a span{
+	display:none;
+}
+
+#logo{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/alogomobile.png);
+	text-indent: -99999px;
+	position:relative;
+}
+
+#logo span {
+     display:none;
+}
+
+#about span, #skills span, #work span {
+     background: none;
+}
+
+#about{
+	background:url(../img/aboutmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#work{
+	background:url(../img/workmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#blog{
+	background:url(../img/blogmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#atra{
+	background:url(../img/crossplatform720.png);
+	width:380px;
+	height:252px;
+	float:right;
+}
+
+#welcome h4{
+	margin:55px 0 0 40px;    
+}
+#welcome h1{
+	margin:0;
+}
+
+#welcome header{
+	width:300px;
+	float:left;
+	}
+
+#welcome .circle{
+	margin:20px 0 0 0;
+}
+#welcome .circle p{
+	padding:26px 17px;
+}
+
+
+#affiliates{
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+
+.lines{
+	width:232px;
+	float:left;
+	margin:71px 0;
+}
+
+#ring{
+	width:150px;
+	height:150px;
+	-webkit-border-radius:75px;
+	-moz-border-radius:75px;
+	border-radius:75px;
+	border:solid 2px #fff;
+	float:left;
+}
+
+
+#afflist a{
+	float:left;
+	padding:0 15px;
+	width: 140px;
+}
+
+/**************************************************************************ABOUT ME*****************************************************/
+
+#me{
+	background:url(../img/me.png) center no-repeat;
+	height:400px;
+	margin:60px  0 0 0;
+}
+
+#me header {
+	margin:150px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:620px;
+}
+
+.circle {
+	width:100px;
+	height:100px;
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+}
+.circle p {
+	font-size:36px;
+	padding:26px 9px;
+	margin:0;
+}
+
+#me h2{
+	margin: 23px 0 23px 20px;
+	width:500px;	
+	line-height:30px;
+	letter-spacing:1px;
+}
+
+#abtme{
+	margin:60px 0;
+}
+
+#info p{
+	font-size:15px;
+	line-height:26px;
+}
+
+/**************************************************************************WORK*****************************************************/
+
+.title{
+	font-size:30px;
+	color:#fff;	
+	margin: 10px auto 0;
+	width:630px;
+	display:block;
+}
+
+#wrk{
+	margin:50px  0;
+}
+
+#wrk header {
+	margin:30px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:620px;
+}
+
+#wrk .circle p {
+	padding:26px 14px;
+}
+
+#wrk h2{
+	margin: 23px 0 23px 20px;
+	width:500px;	
+	line-height:30px;
+}
+
+/*Portfolio*/
+.boundingBox{
+	margin:5px auto;
+	padding:0;
+	width:630px;
+}
+/* Content */
+
+#content{ 
+padding:0;
+}
+
+ul#portfolio-filter{ 
+	list-style:none;
+	width: 100%;
+	border-top: 3px #6ADBD8 solid;
+	padding:5px 0 0 0; 
+	margin:0;
+}
+ul#portfolio-filter a{
+	font-size:14px;
+}
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ 
+	color: #6ADBD8;
+ }
+ul#portfolio-filter a.current{ 	
+	background:#6ADBD8;
+	color:#000;
+ }
+
+ul#portfolio-list{ 
+	margin: 36px 0 0 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+ul#portfolio-list li{ 
+	width: 300px; 
+	height: 200px; 
+	display: block; 
+	float: left; 
+	margin: 0 5px 10px; 
+	overflow: hidden; 
+}
+ul#portfolio-list li a{ 
+	display: block; 
+	width: 300px; 
+	height: 200px; 
+	overflow: hidden; 
+}
+
+/*********************************************ATRA**************************************************************************/
+#portfolio{
+	width:700px;
+}
+
+.comments{
+	width:700px;
+}
+
+.atra #brandimg{
+	margin:0;	
+	display:block;
+	width:700px;
+	height:394px;	
+	background:url(../img/atrabranding700.jpg);
+}
+
+.atra #webimg{
+	width:700px;
+	height:264px;
+	background:url(../img/atraweb700.jpg);
+}
+
+.atra #cinema iframe{
+	float:left;	
+	width:700px;
+	height:394px;
+}
+
+.atra #photoimg{	
+	width:700px;
+	height:282px;
+	background:url(../img/sfatra700.jpg);
+}
+
+.atra #printimg{
+	width:700px;
+	height:282px;
+	background:url(../img/atrabc700.jpg);
+}
+
+.clmn_1{
+	margin:0px 20px 0 20px;
+	float:left;
+	width:530px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;
+}
+
+.clmn_2{
+	margin:20px 20px 0 20px;
+	float:left;
+	width:530px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+.clmn_f{
+	margin:0px 20px 0px 20px;
+	float:left;
+	width:530px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+/*********************************************HOM**************************************************************************/
+
+.hom #cinema iframe{
+	float:left;	
+	width:700px;
+	height:394px;
+}
+
+.hom #brandimg{
+	margin:0;	
+	float:left;	
+	width:700px;
+	height:282px;
+	background:url(../img/hombranding700.jpg);
+}
+
+.hom #webimg{
+	margin:0;	
+	float:left;	
+	width:700px;
+	height:506px;
+	background:url(../img/homweb700.jpg);
+}
+
+.hom #photoimg{
+	margin:0;	
+	float:left;	
+	width:700px;
+	height:431px;
+	background:url(../img/homphoto700.jpg);
+}
+
+.hom #printimg{
+	margin:0;	
+	float:left;	
+	width:700px;
+	height:339px;
+	background:url(../img/homprint700.jpg);
+}
+
+
+
+/*********************************************DENICE**************************************************************************/
+
+.denice #webimg{
+	margin:0;	
+	float:left;	
+	width:700px;
+	height:506px;
+	background:url(../img/dnweb700.jpg);
+}
+
+/******************************************ENLIGHTENMENT*************************************************************************/
+
+.en #crftimg{
+	margin:0;	
+	float:left;	
+	width:700px;
+	height:305px;
+	background: url(../img/encrft700.jpg) no-repeat center #fff;
+}
+
+
+
+}
+
+/******************************************************@2ximg720**************************************************************/
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width : 720px) and (max-width : 960px) {
+
+#logo{
+	width:25px;
+	height:25px;
+	background: url(../img/alogomobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#about{
+	width:25px;
+	height:25px;
+	background: url(../img/aboutmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#work{
+	width:25px;
+	height:25px;
+	background: url(../img/workmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#blog{
+	width:25px;
+	height:25px;
+	background: url(../img/blogmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#atra{
+	width: 380px;
+	height: 252px;
+	background:url(../img/crossplatform@2x.png);
+	-webkit-background-size: 380px auto ;  
+	-moz-background-size: 380px auto  ;  
+  	background-size: 380px auto ;
+}
+
+.atra #brandimg{
+	background:url(../img/atrabranding@2x.jpg);
+	width:700px;
+	height:394px;
+	-webkit-background-size: 700px auto ;  
+	-moz-background-size: 700px auto;  
+  	background-size: 700px auto;
+}
+
+.atra #webimg{
+	background:url(../img/atraweb@2x.jpg);
+	width:700px;
+	height:264px;
+	-webkit-background-size: 700px auto ;  
+	-moz-background-size: 700px auto;  
+  	background-size: 700px auto;
+}
+
+
+.hom #brandimg{
+	width:700px;
+	height:282px;
+	background:url(../img/hombranding@2x.jpg);
+	-webkit-background-size: 700px auto ;  
+	-moz-background-size: 700px auto;  
+  	background-size: 700px auto;
+}
+
+.hom #photoimg{
+	width:700px;
+	height:431px;
+	background:url(../img/homphoto@2x.jpg);
+	-webkit-background-size: 700px auto ;  
+	-moz-background-size: 700px auto;  
+  	background-size: 700px auto;
+}
+
+.hom #webimg{
+	width:700px;
+	height:506px;
+	background:url(../img/homweb@2x.jpg);
+	-webkit-background-size: 700px auto ;  
+	-moz-background-size: 700px auto;  
+  	background-size: 700px auto;
+}
+
+.denice #webimg{
+	width:700px;
+	background:url(../img/dnweb@2x.jpg);
+	-webkit-background-size: 700px auto ;  
+	-moz-background-size: 700px auto;  
+  	background-size: 700px auto;
+}
+
+}
+
+
+/******************************************************************640CSS****************************************************/
+@media (min-width : 640px) and (max-width : 720px) {
+.wrapper {
+	width: 640px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper2{
+	width: 600px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper3{
+	width:540px;
+	margin: 0 auto;
+
+}
+
+h1{
+	font-size:15px;
+}
+
+h2{
+	font-size:32px;
+	text-align:left;
+}
+
+h3{
+	font-size:26px;
+}
+
+h4{
+	font-size:14px;
+}
+
+h6{
+	margin:0;	
+}
+
+#navbar{
+	height:45px;
+}
+
+#Alogo{
+	margin:10px 0 0;
+}
+
+#logo span {
+     display:none;
+}
+
+#navigation{
+	margin:10px 0 0;
+}
+
+#navigation a{
+	margin-left:20px;
+}
+
+#navigation a span{
+	display:none;
+}
+
+#logo{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/alogomobile.png);
+	text-indent: -99999px;
+	position:relative;
+}
+
+#about span, #skills span, #work span {
+        background: none;
+}
+
+#about{
+	background:url(../img/aboutmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#work{
+	background:url(../img/workmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#blog{
+	background:url(../img/blogmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#atra{
+	background:url(../img/crossplatform640.png);
+	width:300px;
+	height:199px;
+	float:right;
+}
+
+#welcome h4{
+	margin:55px 0 0 40px;    
+}
+#welcome h1{
+	margin:0;
+}
+
+#welcome header{
+	width:300px;
+	float:left;
+	}
+
+#welcome .circle{
+	margin:10px 0 0 0;
+}
+#welcome .circle p{
+	padding:26px 17px;
+}
+
+#affiliates{
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+
+.lines{
+	width:193px;
+	float:left;
+	margin:71px 0;
+}
+
+#ring{
+	width:150px;
+	height:150px;
+	-webkit-border-radius:75px;
+	-moz-border-radius:75px;
+	border-radius:75px;
+	border:solid 2px #fff;
+	float:left;
+}
+
+#afflist a{
+	float:left;
+	padding:0 30px;
+	width: 140px;
+}
+
+#ftnav a{
+	padding:10px 30px 10px 0;
+}
+
+/**************************************************************************ABOUT ME*********************************************/
+
+#me{
+	background:url(../img/me.png) center no-repeat;
+	height:400px;
+	margin:60px 0 0 0;
+}
+
+#me header {
+	margin:150px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:540px;
+}
+
+.circle {
+	width:100px;
+	height:100px;
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+}
+.circle p {
+	font-size:36px;
+	padding:26px 9px;
+	margin:0;
+}
+
+#me h2{
+	margin: 23px 0 23px 20px;
+	width:420px;	
+	line-height:28px;
+	letter-spacing:1px;
+}
+
+#abtme{
+	margin:60px 0;
+}
+
+#info p{
+	font-size:15px;
+	line-height:26px;
+}
+
+
+/**************************************************************************WORK*****************************************************/
+
+.title{
+	font-size:30px;
+	color:#fff;	
+	margin: 10px auto 0;
+	width:630px;
+	display:block;
+}
+
+#wrk{
+	margin:50px  0 35px 0;
+}
+
+#wrk header {
+	margin:30px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:540px;
+}
+
+#wrk .circle p {
+	padding:26px 14px;
+}
+
+#wrk h2{
+	margin: 23px 0 23px 20px;
+	width:420px;	
+	line-height:28px;
+}
+
+/*Portfolio*/
+.boundingBox{
+	margin:5px auto;
+	padding:0;
+	width:630px;
+}
+/* Content */
+
+#content{ 
+padding:0;
+}
+
+ul#portfolio-filter{ 
+	list-style:none;
+	width: 100%;
+	border-top: 3px #6ADBD8 solid;
+	padding:5px 0 0 0; 
+	margin:0;
+}
+ul#portfolio-filter a{
+	font-size:14px;
+}
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ 
+	color: #6ADBD8;
+ }
+ul#portfolio-filter a.current{ 	
+	background:#6ADBD8;
+	color:#000;
+ }
+
+ul#portfolio-list{ 
+	margin: 36px 0 0 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+ul#portfolio-list li{ 
+	width: 300px; 
+	height: 200px; 
+	display: block; 
+	float: left; 
+	margin: 0 5px 10px; 
+	overflow: hidden; 
+}
+ul#portfolio-list li a{ 
+	display: block; 
+	width: 300px; 
+	height: 200px; 
+	overflow: hidden; 
+}
+
+/*********************************************ATRA**************************************************************************/
+#portfolio{
+	width:620px;
+}
+
+.comments{
+	width:620px;
+}
+
+.atra #brandimg{
+	margin:0;	
+	display:block;
+	width:620px;
+	height:349px;	
+	background:url(../img/atrabranding620.jpg);
+}
+
+.atra #webimg{
+	width:620px;
+	height:234px;
+	background:url(../img/atraweb620.jpg);
+}
+
+.atra #cinema iframe{
+	float:left;	
+	width:620px;
+	height:349px;
+}
+
+.atra #photoimg{	
+	width:620px;
+	height:250px;
+	background:url(../img/sfatra620.jpg);
+}
+
+.atra #printimg{
+	width:620px;
+	height:300px;
+	background:url(../img/atrabc620.jpg);
+}
+
+.clmn_1{
+	margin:0px 20px 0 20px;
+	float:left;
+	width:450px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;
+}
+
+.clmn_2{
+	margin:20px 20px 0 20px;
+	float:left;
+	width:450px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+.clmn_f{
+	margin:0px 20px 0px 20px;
+	float:left;
+	width:450px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+/*********************************************HOM**************************************************************************/
+
+.hom #cinema iframe{
+	float:left;	
+	width:620px;
+	height:349px;
+}
+
+.hom #brandimg{
+	margin:0;	
+	float:left;	
+	width:620px;
+	height:250px;
+	background:url(../img/hombranding620.jpg);
+}
+
+.hom #webimg{
+	margin:0;	
+	float:left;	
+	width:620px;
+	height:448px;
+	background:url(../img/homweb620.jpg);
+}
+
+.hom #photoimg{
+	margin:0;	
+	float:left;	
+	width:620px;
+	height:382px;
+	background:url(../img/homphoto620.jpg);
+}
+
+.hom #printimg{
+	margin:0;	
+	float:left;	
+	width:620px;
+	height:300px;
+	background:url(../img/homprint620.jpg);
+}
+
+/*********************************************DENICE**************************************************************************/
+
+.denice #webimg{
+	margin:0;	
+	float:left;	
+	width:620px;
+	height:448px;
+	background:url(../img/dnweb620.jpg);
+}
+
+/******************************************ENLIGHTENMENT*************************************************************************/
+
+.en #crftimg{
+	margin:0;	
+	float:left;	
+	width:620px;
+	height:270px;
+	background: url(../img/encrft620.jpg) no-repeat center #fff;
+}
+
+
+
+
+
+
+
+
+
+/**********************************************@2ximg640********************************************************************/
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width : 640px) and (max-width : 720px) {
+
+#logo{
+	width:25px;
+	height:25px;
+	background: url(../img/alogomobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#about{
+	width:25px;
+	height:25px;
+	background: url(../img/aboutmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+
+#work{
+	width:25px;
+	height:25px;
+	background: url(../img/workmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#blog{
+	width:25px;
+	height:25px;
+	background: url(../img/blogmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#atra{
+	width: 300px;
+	height: 199px;
+	background:url(../img/crossplatform@2x.png);
+	-webkit-background-size: 300px auto ;  
+	-moz-background-size: 300px auto  ;  
+  	background-size: 300px auto ;
+}
+
+.atra #brandimg{
+	background:url(../img/atrabranding@2x.jpg);
+	height:349px;
+	width:620px;
+	-webkit-background-size: 620px auto ;  
+	-moz-background-size: 620px auto;  
+  	background-size: 620px auto;
+}
+
+.atra #webimg{
+	background:url(../img/atraweb@2x.jpg);
+	height:234px;
+	width:620px;
+	-webkit-background-size: 620px auto ;  
+	-moz-background-size: 620px auto;  
+  	background-size: 620px auto;
+}
+
+.hom #brandimg{
+	width:620px;
+	height:250px;
+	background:url(../img/hombranding@2x.jpg);
+	-webkit-background-size: 620px auto ;  
+	-moz-background-size: 620px auto;  
+  	background-size: 620px auto;
+}
+
+.hom #photoimg{
+	width:620px;
+	height:382px;
+	background:url(../img/homphoto@2x.jpg);
+	-webkit-background-size: 620px auto ;  
+	-moz-background-size: 620px auto;  
+  	background-size: 620px auto;
+}
+
+.hom #webimg{
+	width:620px;
+	height:448px;
+	background:url(../img/homweb@2x.jpg);
+	-webkit-background-size: 620px auto ;  
+	-moz-background-size: 620px auto;  
+  	background-size: 620px auto;
+}
+
+.hom #printimg{
+	width:620px;
+	background:url(../img/homprint1240.jpg) center no-repeat ;
+	-webkit-background-size: auto 155px ;  
+	-moz-background-size: auto 155px ;  
+  	background-size: auto 155px ; 
+}
+
+.denice #webimg{
+	width:620px;
+	background:url(../img/dnweb@2x.jpg);
+	-webkit-background-size: 620px auto ;  
+	-moz-background-size: 620px auto;  
+  	background-size: 620px auto;
+}
+
+.en #crftimg{
+	width:640px;
+	background: url(../img/encrft1240.jpg) no-repeat center #fff;
+	-webkit-background-size: 640px auto ;  
+	-moz-background-size: 640px auto;  
+  	background-size: 640px auto;
+}
+
+}	
+}
+
+/*************************************************************480CSS*********************************************************/
+@media (min-width : 480px) and (max-width : 640px) {
+
+.wrapper {
+	width: 480px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper2{
+	width: 440px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper3{
+	width:390px;
+	margin: 0 auto;
+
+}
+
+h1{
+	font-size:14px;
+}
+
+h2{
+	font-size:25px;
+	text-align:left;
+}
+
+h3{
+	font-size:24px;
+}
+
+h4{
+	font-size:14px;
+}
+
+h6{
+	background:url(../img/transw.png);
+	padding:10px;
+	float:left;	
+	font-size:50px;
+	margin-top:10px;
+}
+
+#hght{
+	margin: 0 auto -243px; /* the bottom margin is the negative value of the footer's height */	
+}
+.push {
+	height:243px; /* .push must be the same height as .footer */
+}
+
+#navbar{
+	height:45px;
+}
+
+#Alogo{
+	margin:10px 0 0;
+}
+
+#navigation{
+	margin:10px 0 0;
+}
+
+#logo{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/alogomobile.png) center no-repeat;
+	text-indent: -99999px;
+	position:relative;
+	margin:0;
+}
+
+#logo span {
+     display:none;
+}
+
+#logo:hover span{
+	opacity: 0;
+}
+
+#navigation a{
+	margin:0 15px;
+}
+
+#navigation a span{
+	display:none;
+}
+
+#about span, #skills span, #work span {
+        background: none;
+}
+
+#about{
+	background:url(../img/aboutmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#work{
+	background:url(../img/workmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#blog{
+	background:url(../img/blogmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#atra{
+	display:none;
+}
+
+#welcome h4{
+	margin:55px 0 0 40px;    
+}
+#welcome h1{
+	padding:10px;
+	font-size:14px;
+	background:url(../img/transb.png);
+	width:300px;
+}
+
+#welcome header{
+	width:440px;
+	height:200px;
+	float:left;
+	background:url(../img/crossplatform640.png) right no-repeat;
+	}
+
+#welcome .circle{
+	margin:10px 200px 0 0;
+}
+
+#welcome .circle p{
+	padding:21px 14px;
+}
+
+#affiliates{
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+#afflist a{
+	float:left;
+	padding:0 40px;
+	width: 140px;
+}
+
+#socialbar{
+	height:243px;	
+}
+
+#socialnav {
+	width: 301px;
+	margin: 30px auto;
+	float: none;
+}
+
+#socialnav a{
+	margin:0 5px;
+}
+
+#ftnav {
+	float: none;
+	margin: 0px auto 20px;
+	width: 290px;
+}
+
+#ftnav a {
+	padding: 10px 15px 10px;
+}
+
+#love{
+	margin:5px auto;
+	float:none;	
+}
+
+#heart{
+	margin: 2px 0 0 20px;
+}
+
+#cpyrght{
+	margin:5px auto;
+	width:157px;
+	float:none;	
+}
+
+
+
+/**************************************************************************ABOUT ME*****************************************************/
+
+#me{
+	background:url(../img/me.png) center no-repeat;
+	height:400px;
+	margin:30px 0 0 0;
+}
+
+#me header {
+	margin:150px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:390px;
+}
+
+.circle {
+	width:80px;
+	height:80px;
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+	border-radius:40px;
+}
+.circle p {
+	font-size:28px;
+	padding:21px 8px ;
+	margin:0;
+}
+
+#me h2{
+	margin: 23px 0 23px 10px;
+	width:300px;	
+	line-height:22px;
+	letter-spacing:normal !important;
+}
+
+#abtme{
+	margin:60px 0;
+}
+
+#info p{
+	font-size:15px;
+	line-height:26px;
+}
+
+/**************************************************************************WORK*****************************************************/
+
+.title{
+	font-size:30px;
+	color:#fff;	
+	margin: 10px auto 0;
+	width:310px;
+	display:block;
+}
+
+#wrk{
+	margin:50px  0 20px 0;
+}
+
+#wrk header {
+	margin:30px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:390px;
+}
+
+#wrk .circle p {
+	padding:21px 13px;
+}
+
+#wrk h2{
+	margin: 23px 0 23px 10px;
+	width:300px;	
+	line-height:22px;
+	font-size:23px;
+}
+
+/*Portfolio*/
+.boundingBox{
+	margin:5px auto;
+	padding:0;
+	width:310px;
+}
+/* Content */
+
+#content{ 
+padding:0;
+}
+
+ul#portfolio-filter{ 
+	list-style:none;
+	width: 100%;
+	border-top: 3px #6ADBD8 solid;
+	padding:5px 0 0 0; 
+	margin:0;
+}
+ul#portfolio-filter a{
+	font-size:11px;
+}
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ 
+	color: #6ADBD8;
+ }
+ul#portfolio-filter a.current{ 	
+	background:#6ADBD8;
+	color:#000;
+ }
+
+ul#portfolio-list{ 
+	margin: 36px 0 0 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+ul#portfolio-list li{ 
+	width: 300px; 
+	height: 200px; 
+	display: block; 
+	float: left; 
+	margin: 0 5px 10px; 
+	overflow: hidden; 
+}
+ul#portfolio-list li a{ 
+	display: block; 
+	width: 300px; 
+	height: 200px; 
+	overflow: hidden; 
+}
+
+.details{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: 1;
+}
+
+.details{
+		width:300px;
+		height:200px;
+		color:#333;
+		text-align:center;
+		background:none;
+}
+
+.caption{
+	float: left;
+	margin: 170px 0 0;
+	right:0;
+	top:0;
+	width:100%;
+	background:url(../img/transb.png)
+}
+
+.cntr{
+	position:relative;
+	bottom:0;
+	right:0;
+	float:right;
+}
+
+.none{
+	display:none;
+}
+
+ul#portfolio-list li a h4 {
+	color:#fff;
+	background:none;
+	margin:0;
+	text-transform:none;
+}
+
+
+/*********************************************ATRA**************************************************************************/
+#portfolio{
+	width:480px;
+}
+
+.comments{
+	width:480px;
+}
+
+.atra #brandimg{
+	margin:0;	
+	display:block;
+	width:480px;
+	height:270px;	
+	background:url(../img/atrabranding480.jpg);
+}
+
+.atra #webimg{
+	width:480px;
+	height:181px;
+	background:url(../img/atraweb480.jpg);
+}
+
+.atra #cinema iframe{
+	float:left;	
+	width:480px;
+	height:270px;
+}
+
+.atra #photoimg{	
+	width:480px;
+	height:194px;
+	background:url(../img/sfatra480.jpg);
+}
+
+.atra #printimg{
+	width:480px;
+	height:232px;
+	background:url(../img/atrabc480.jpg);
+}
+
+.clmn_1{
+	margin:0;
+	padding:0 20px;
+	float:none;
+	width:440px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;
+}
+
+.clmn_2{
+	margin:20px 0 0px 0;
+	padding:0 20px;
+	float:none;
+	width:440px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+.clmn_f{
+	margin:0px 20px 0px 20px;
+	float:left;
+	width:440px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+/*********************************************HOM**************************************************************************/
+
+.hom #cinema iframe{
+	float:left;	
+	width:480px;
+	height:270px;
+}
+
+.hom #brandimg{
+	margin:0;	
+	float:left;	
+	width:480px;
+	height:194px;
+	background:url(../img/hombranding480.jpg);
+}
+
+.hom #webimg{
+	margin:0;	
+	float:left;	
+	width:480px;
+	height:347px;
+	background:url(../img/homweb480.jpg);
+}
+
+.hom #photoimg{
+	margin:0;	
+	float:left;	
+	width:480px;
+	height:296px;
+	background:url(../img/homphoto480.jpg);
+}
+
+.hom #printimg{
+	margin:0;	
+	float:left;	
+	width:480px;
+	height:232px;
+	background:url(../img/homprint480.jpg);
+}
+
+/*********************************************DENICE**************************************************************************/
+
+.denice #webimg{
+	margin:0;	
+	float:left;	
+	width:480px;
+	height:347px;
+	background:url(../img/dnweb480.jpg);
+}
+
+/******************************************ENLIGHTENMENT*************************************************************************/
+
+.en #crftimg{
+	margin:0;	
+	float:left;	
+	width:480px;
+	height:209px;
+	background: url(../img/encrft480.jpg) no-repeat center #fff;
+}
+
+
+
+}
+
+
+/*@2ximg480*/
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width : 480px) and (max-width : 640px) {
+
+#logo{
+	width:25px;
+	height:25px;
+	background: url(../img/alogomobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#about{
+	width:25px;
+	height:25px;
+	background: url(../img/aboutmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#work{
+	width:25px;
+	height:25px;
+	background: url(../img/workmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#blog{
+	width:25px;
+	height:25px;
+	background: url(../img/blogmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+
+#welcome header{
+	width:440px;
+	height:200px;
+	float:left;
+	background:url(../img/crossplatform@2x.png) right no-repeat;
+	-webkit-background-size: 300px auto ;  
+	-moz-background-size: 300px auto  ;  
+  	background-size: 300px auto ;
+}
+
+.atra #brandimg{
+	width:480px;
+	height:270px;
+	background:url(../img/atrabranding@2x.jpg) center no-repeat ;
+	-webkit-background-size: 480px auto;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;  
+}
+
+.atra #webimg{
+	width:480px;
+	height:181px;
+	background:url(../img/atraweb@2x.jpg) center no-repeat ;
+	-webkit-background-size: 480px auto;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;   
+}
+
+.atra #photoimg{	
+	width:480px;
+	background:url(../img/sfatra1240.jpg) center no-repeat ;
+	-webkit-background-size: 480px auto;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;  
+}
+
+.atra #printimg{
+	width:480px;
+	background:url(../img/atrabc1240.jpg) center no-repeat ;
+	-webkit-background-size: 480px auto;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;  
+}
+
+.hom #brandimg{
+	width:480px;
+	height:194px;
+	background:url(../img/hombranding@2x.jpg);
+	-webkit-background-size: 480px auto ;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;
+}
+
+.hom #photoimg{
+	width:480px;
+	height:296px;
+	background:url(../img/homphoto@2x.jpg);
+	-webkit-background-size: 480px auto ;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;
+}
+
+.hom #webimg{
+	width:480px;
+	height:347px;
+	background:url(../img/homweb@2x.jpg);
+	-webkit-background-size: 480px auto ;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;
+}
+
+.hom #printimg{
+	width:480px;
+	background:url(../img/homprint1240.jpg) center no-repeat ;
+	-webkit-background-size: 480px auto ;  
+	-moz-background-size: 480px auto ;  
+  	background-size: 480px auto ; 
+}
+
+.denice #webimg{
+	width:480px;
+	background: url(../img/dnweb@2x.jpg);
+	-webkit-background-size: 480px auto ;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;
+}
+
+.en #crftimg{
+	width:480px;
+	background: url(../img/encrft1240.jpg) no-repeat center #fff;
+	-webkit-background-size: 480px auto ;  
+	-moz-background-size: 480px auto;  
+  	background-size: 480px auto;
+}
+
+
+}
+
+
+/*****************************************************************320CSS********************************************************/
+@media (max-width : 480px) {
+.wrapper {
+	width: 320px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper2{
+	width: 320px;
+	margin: 0px auto;
+	padding:0;
+}
+
+.wrapper3{
+	width:300px;
+	margin: 0 auto;
+}
+
+h1{
+	font-size:14px;
+}
+
+h2{
+	font-size:21px;
+	text-align:left;
+}
+
+h3{
+	font-size:22px;
+}
+
+h4{
+	font-size:14px;
+}
+
+h6{
+	background:url(../img/transw.png);
+	padding:10px;
+	float:left;	
+	font-size:50px;	
+	margin-top:10px;
+}
+
+#hght{
+		margin: 0 auto -243px; /* the bottom margin is the negative value of the footer's height */	
+}
+
+.push {
+	height:243px; /* .push must be the same height as .footer */
+}
+
+#navbar{
+	height:45px;
+}
+
+#Alogo{
+	margin:10px 0 0;
+}
+
+#navigation{
+	margin:10px 0 0;
+}
+
+#logo{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/alogomobile.png) center no-repeat;
+	text-indent: -99999px;
+	position:relative;
+	margin:0;
+}
+
+#logo span {
+     display:none;
+}
+
+#logo:hover span{
+	opacity: 0;
+}
+
+#navigation a{
+	margin:0 15px;
+}
+
+#navigation a span{
+	display:none;
+}
+
+#about span, #skills span, #work span {
+	background: none;
+}
+
+#about{
+	background:url(../img/aboutmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#work{
+	background:url(../img/workmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#blog{
+	background:url(../img/blogmobile.png) no-repeat center;
+	width: 55px;
+	height: 25px;
+}
+
+#atra{
+	display:none;
+}
+
+#welcome h4{
+	margin:55px 0 0 40px;    
+}
+#welcome h1{
+	padding:10px;
+	background:url(../img/transb.png);
+	width:300px;
+}
+
+#welcome header{
+	width:320px;
+	height:200px;
+	float:left;
+	background:url(../img/crossplatform640.png) right no-repeat;
+	}
+
+#welcome .circle{
+	margin:10px 200px 0 0;
+}
+
+#welcome .circle p{
+	padding:14px 10px;
+}
+
+#affiliates{
+	display:block;
+	overflow:hidden;
+	width:100%;
+}
+
+#afflist a{
+	float:left;
+	padding:0 10px;
+	width: 140px;
+}
+
+#socialbar{
+	height:243px;	
+}
+
+#socialnav {
+	width: 301px;
+	margin: 30px auto;
+	float: none;
+}
+
+#socialnav a{
+	margin:0 5px;
+}
+
+#ftnav {
+	float: none;
+	margin: 0px auto 20px;
+	width: 290px;
+}
+
+#ftnav a {
+	padding: 10px 15px 10px;
+}
+
+#love{
+	margin:5px auto;
+	float:none;	
+}
+
+#heart{
+	margin: 2px 0 0 20px;
+}
+
+#cpyrght{
+	margin:5px auto;
+	width:157px;
+	float:none;	
+}
+
+
+/**************************************************************************ABOUT ME*****************************************************/
+
+#me{
+	background:url(../img/mesml.png) center no-repeat;
+	height:290px;
+	margin:30px 0 0 0;
+}
+
+#me header {
+	margin:150px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:310px;
+}
+
+.circle {
+	width:50px;
+	height:50px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+}
+.circle p {
+	font-size:16px;
+	padding:14px 6px ;
+	margin:0;
+}
+
+#me h2{
+	margin: 7px 0 7px 5px;
+	width:250px;	
+	line-height:18px;
+}
+
+#abtme{
+	margin:60px 0;
+}
+
+#info p{
+	font-size:15px;
+	line-height:26px;
+}
+
+.rngbttn{
+	margin:0 0 0 20px;
+}
+
+#rtitle{
+	float:left;
+	font-size:32px;
+	color:#fff;	
+	margin:9px 20px 9px 0;
+}
+
+/**************************************************************************WORK*****************************************************/
+
+.title{
+	font-size:30px;
+	color:#fff;	
+	margin: 10px auto 0;
+	width:320px;
+	display:block;
+}
+
+#wrk{
+	margin:30px  0 10px 0;
+}
+
+#wrk header {
+	margin:30px auto 0 auto;
+	overflow:hidden;
+	padding:10px 0;
+	width:320px;
+}
+
+#wrk .circle p {
+	padding:14px 10px;
+}
+
+#wrk h2{
+	margin: 8px 0 8px 5px;
+	width:250px;	
+	line-height:17px;
+	font-size:18px;
+}
+
+/*Portfolio*/
+.boundingBox{
+	margin:5px auto;
+	padding:0;
+	width:310px;
+}
+/* Content */
+
+#content{ 
+padding:0;
+}
+
+ul#portfolio-filter{ 
+	list-style:none;
+	width: 100%;
+	border-top: 3px #6ADBD8 solid;
+	padding:5px 0 0 0; 
+	margin:0;
+}
+ul#portfolio-filter a{
+	font-size:11px;
+}
+ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ 
+	color: #6ADBD8;
+ }
+ul#portfolio-filter a.current{ 	
+	background:#6ADBD8;
+	color:#000;
+ }
+
+ul#portfolio-list{ 
+	margin: 36px 0 0 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+ul#portfolio-list li{ 
+	width: 300px; 
+	height: 200px; 
+	display: block; 
+	float: left; 
+	margin: 0 5px 10px; 
+	overflow: hidden; 
+}
+ul#portfolio-list li a{ 
+	display: block; 
+	width: 300px; 
+	height: 200px; 
+	overflow: hidden; 
+}
+
+.details{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: 1;
+}
+
+.details{
+		width:300px;
+		height:200px;
+		color:#333;
+		text-align:center;
+		background:none;
+}
+
+.caption{
+	float: left;
+	margin: 170px 0 0;
+	right:0;
+	top:0;
+	width:100%;
+	background:url(../img/transb.png)
+}
+
+.cntr{
+	position:relative;
+	bottom:0;
+	right:0;
+	float:right;
+}
+
+.none{
+	display:none;
+}
+
+ul#portfolio-list li a h4 {
+	color:#fff;
+	background:none;
+	margin:0;
+	text-transform:none;
+}
+
+/*********************************************ATRA**************************************************************************/
+#portfolio{
+	width:320px;
+}
+
+.comments{
+	width:320px;
+}
+
+.atra #brandimg{
+	width:320px;
+	height:180px;	
+	background:url(../img/atrabranding320.jpg);
+}
+
+.atra #webimg{
+	width:320px;
+	height:121px;
+	background:url(../img/atraweb320.jpg);
+}
+
+.atra #cinema iframe{
+	float:left;	
+	width:320px;
+	height:180px;
+}
+
+.atra #photoimg{	
+	width:320px;
+	height:129px;
+	background:url(../img/sfatra320.jpg);
+}
+
+.atra #printimg{
+	width:320px;
+	height:155px;
+	background:url(../img/atrabc320.jpg);
+}
+
+.portnav{
+	display:block
+}
+
+.clmn_1{
+	margin:0;
+	padding:0 20px;
+	float:none;
+	width:280px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;
+}
+
+.clmn_2{
+	margin:20px 0 0 0;
+	padding:0 20px;
+	float:none;
+	width:280px;
+	color:#666;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+.clmn_f{
+	margin:0px 20px 0px 20px;
+	float:left;
+	width:280px;
+	font-family: "minion-pro", serif;
+	color:#A3A3A3;	
+	font-size:14px;
+	line-height:24px;	
+}
+
+/*********************************************HOM**************************************************************************/
+
+.hom #cinema iframe{
+	float:left;	
+	width:320px;
+	height:180px;
+}
+
+.hom #brandimg{
+	margin:0;	
+	float:left;	
+	width:320px;
+	height:129px;
+	background:url(../img/hombranding320.jpg);
+}
+
+.hom #webimg{
+	margin:0;	
+	float:left;	
+	width:320px;
+	height:231px;
+	background:url(../img/homweb320.jpg);
+}
+
+.hom #photoimg{
+	margin:0;	
+	float:left;	
+	width:320px;
+	height:197px;
+	background:url(../img/homphoto320.jpg);
+}
+
+.hom #printimg{
+	margin:0;	
+	float:left;	
+	width:320px;
+	height:155px;
+	background:url(../img/homprint320.jpg);
+}
+
+.link p{
+	display:none;	
+}
+
+/*********************************************DENICE**************************************************************************/
+
+.denice #webimg{
+	margin:0;	
+	float:left;	
+	width:320px;
+	height:231px;
+	background:url(../img/dnweb320.jpg);
+}
+
+
+/******************************************ENLIGHTENMENT*************************************************************************/
+
+.en #crftimg{
+	margin:0;	
+	float:left;	
+	width:320px;
+	height:139px;
+	background: url(../img/encrft320.jpg) no-repeat center #fff;
+}
+
+
+}
+
+
+
+
+
+
+/*@2ximg320*/
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-device-width: 480px){
+
+#logo{
+	width:25px;
+	height:25px;
+	background: url(../img/alogomobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#about{
+	width:25px;
+	height:25px;
+	background: url(../img/aboutmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#work{
+	width:25px;
+	height:25px;
+	background: url(../img/workmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#blog{
+	width:25px;
+	height:25px;
+	background: url(../img/blogmobile@2x.png);
+	-webkit-background-size: auto 25px ;  
+	-moz-background-size: auto 25px ;  
+  	background-size: auto 25px ;  
+}
+
+#welcome header{
+	width:320px;
+	height:200px;
+	float:left;
+	background:url(../img/crossplatform@2x.png) right no-repeat;
+	-webkit-background-size: 300px auto ;  
+	-moz-background-size: 300px auto  ;  
+  	background-size: 300px auto ;
+}
+
+
+#me{
+	height:290px;
+	background:url(../img/mesml@2x.png) center no-repeat;
+	-webkit-background-size: auto 290px ;  
+	-moz-background-size: auto 290px ;  
+  	background-size: auto 290px ;  
+}
+	
+.atra #brandimg{
+	width:320px;
+	height:180px;	
+	background:url(../img/atrabranding@2x.jpg) center no-repeat ;
+	-webkit-background-size: 320px 180px !important;  
+	-moz-background-size: 320px 180px !important ;  
+  	background-size: 320px 180px !important ;  
+}
+
+.atra #webimg{
+	width:320px;
+	height:121px;
+	background:url(../img/atraweb@2x.jpg) center no-repeat ;
+	-webkit-background-size: auto 121px ;  
+	-moz-background-size: auto 121px ;  
+  	background-size: auto 121px ; 
+}
+
+.atra #photoimg{	
+	width:320px;
+	height:129px;
+	background:url(../img/sfatra1240.jpg) center no-repeat ;
+	-webkit-background-size: auto 129px ;  
+	-moz-background-size: auto 129px ;  
+  	background-size: auto 129px ; 
+}
+
+.atra #printimg{
+	width:320px;
+	height:155px;
+	background:url(../img/atrabc1240.jpg) center no-repeat ;
+	-webkit-background-size: auto 155px ;  
+	-moz-background-size: auto 155px ;  
+  	background-size: auto 155px ; 
+}
+
+.hom #brandimg{
+	width:320px;
+	height:129px;
+	background:url(../img/hombranding@2x.jpg);
+	-webkit-background-size: 320px auto ;  
+	-moz-background-size: 320px auto;  
+  	background-size: 320px auto;
+}
+
+.hom #photoimg{
+	width:320px;
+	height:197px;
+	background:url(../img/homphoto@2x.jpg);
+	-webkit-background-size: 320px auto ;  
+	-moz-background-size: 320px auto;  
+  	background-size: 320px auto;
+}
+
+.hom #webimg{
+	width:320px;
+	height:231px;
+	background:url(../img/homweb@2x.jpg);
+	-webkit-background-size: 320px auto ;  
+	-moz-background-size: 320px auto;  
+  	background-size: 320px auto;
+}
+
+.hom #printimg{
+	width:320px;
+	height:155px;
+	background:url(../img/homprint1240.jpg) center no-repeat ;
+	-webkit-background-size: auto 155px ;  
+	-moz-background-size: auto 155px ;  
+  	background-size: auto 155px ; 
+}
+
+.denice #webimg{
+	width:320px;
+	background:url(../img/dnweb@2x.jpg);
+	-webkit-background-size: 320px auto ;  
+	-moz-background-size: 320px auto;  
+  	background-size: 320px auto;
+}
+
+.en #crftimg{
+	width:320px;
+	background: url(../img/encrft1240.jpg) no-repeat center #fff;
+	-webkit-background-size: 320px auto ;  
+	-moz-background-size: 320px auto;  
+  	background-size: 320px auto;
+}
+
+}
+
+
+/************************************************************@2ximg1280*********************************************************/
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-width: 1280px){
+	
+#logo{
+	display: block;
+	width: 100px;
+	height: 28px;
+	background: url(../img/Logo@2x.png) bottom left no-repeat;
+	text-indent: -99999px;
+	position:relative;
+	-webkit-background-size: 100px 55px ;  
+	-moz-background-size: 100px 55px ;  
+  	background-size: 100px 55px ; 
+}
+
+#logo span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/Logo@2x.png)  top left no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 2s;
+        -moz-transition:    opacity 2s;
+        -o-transition:      opacity 2s;
+		-webkit-background-size: 100px 55px ;  
+	-moz-background-size: 100px 55px ;  
+  	background-size: 100px 55px ; 
+}
+
+#about{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/about@2x.png) bottom no-repeat;
+	position:relative;
+	-webkit-background-size: 25px 50px ;  
+	-moz-background-size: 25px 50px ;  
+  	background-size: 25px 50px ; 
+}
+
+#about span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/about@2x.png)  top no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -o-transition:      opacity 1s;
+		-webkit-background-size: 25px 50px ;  
+	-moz-background-size: 25px 50px ;  
+  	background-size: 25px 50px ; 
+}
+
+#work{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/work@2x.png) bottom no-repeat;
+	position:relative;
+	-webkit-background-size: 25px 50px ;  
+	-moz-background-size: 25px 50px ;  
+  	background-size: 25px 50px ; 
+}
+
+#work span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/work@2x.png)  top no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -o-transition:      opacity 1s;
+		-webkit-background-size: 25px 50px ;  
+	-moz-background-size: 25px 50px ;  
+  	background-size: 25px 50px ; 
+}
+
+#blog{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/blog@2x.png) bottom no-repeat;
+	position:relative;
+	-webkit-background-size: 25px 50px ;  
+	-moz-background-size: 25px 50px ;  
+  	background-size: 25px 50px ;
+}
+
+#blog span {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: url(../img/blog@2x.png)  top no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -o-transition:      opacity 1s;
+		-webkit-background-size: 25px 50px ;  
+	-moz-background-size: 25px 50px ;  
+  	background-size: 25px 50px ;
+}
+
+#atra{
+	background:url(../img/crossplatform@2x.png);
+	width:689px;
+	height:457px;
+	float:right;
+	-webkit-background-size: 689px auto ;  
+	-moz-background-size: 689px auto  ;  
+  	background-size: 689px auto ;
+}
+
+#me{
+	height:400px;
+	background:url(../img/me@2x.png) center no-repeat;
+	-webkit-background-size: 414px 400px ;  
+	-moz-background-size: 414px 400px ;  
+  	background-size: 414px 400px ;  
+}
+
+.atra #brandimg{
+	width:1240px;
+	height:698px;
+	background:url(../img/atrabranding@2x.jpg);
+	-webkit-background-size: 1240px auto ;  
+	-moz-background-size: 1240px auto;  
+  	background-size: 1240px auto;
+}
+
+.atra #webimg{
+	width:1240px;
+	height:468px;
+	background:url(../img/atraweb@2x.jpg);
+	-webkit-background-size: 1240px auto ;  
+	-moz-background-size: 1240px auto;  
+  	background-size: 1240px auto;
+}
+
+
+.hom #brandimg{
+	width:1240px;
+	height:500px;
+	background:url(../img/hombranding@2x.jpg);
+	-webkit-background-size: 1240px auto ;  
+	-moz-background-size: 1240px auto;  
+  	background-size: 1240px auto;
+}
+
+.hom #photoimg{
+	width:1240px;
+	height:764px;
+	background:url(../img/homphoto@2x.jpg);
+	-webkit-background-size: 1240px auto ;  
+	-moz-background-size: 1240px auto;  
+  	background-size: 1240px auto;
+}
+
+.hom #webimg{
+	width:1240px;
+	height:896px;
+	background:url(../img/homweb@2x.jpg);
+	-webkit-background-size: 1240px auto ;  
+	-moz-background-size: 1240px auto;  
+  	background-size: 1240px auto;
+}
+
+.denice #webimg{
+	width:1240px;
+	background:url(../img/dnweb@2x.jpg);
+	-webkit-background-size: 1240px auto ;  
+	-moz-background-size: 1240px auto;  
+  	background-size: 1240px auto;
+}
+
+
+}
+
+
+/************************************************************@2ximgAll*********************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	
+#affhom{
+	background:url(../img/affhom@2x.png) center no-repeat;
+	width:140px;
+	height:140px;
+	-webkit-background-size: auto 140px ;  
+	-moz-background-size: auto 140px ;  
+  	background-size: auto 140px ;
+}
+
+#affbmrkd{
+	background:url(../img/affbmrkd@2x.png) center no-repeat;
+	width:140px;
+	height:140px;
+	-webkit-background-size: auto 140px ;  
+	-moz-background-size: auto 140px ;  
+  	background-size: auto 140px ;
+}
+
+#affdn{
+	background:url(../img/affdn@2x.png) center no-repeat;
+	width:140px;
+	height:140px;
+	-webkit-background-size: auto 140px ;  
+	-moz-background-size: auto 140px ;  
+  	background-size: auto 140px ;
+}
+
+#affjpx{
+	background:url(../img/affjpx@2x.png) center no-repeat;
+	width:140px;
+	height:140px;
+	-webkit-background-size: auto 140px ;  
+	-moz-background-size: auto 140px ;  
+  	background-size: auto 140px ;
+}
+
+#affsahir{
+	background:url(../img/affsahir@2x.png) center no-repeat;
+	width:140px;
+	height:140px;
+	-webkit-background-size: auto 140px ;  
+	-moz-background-size: auto 140px ;  
+  	background-size: auto 140px ;
+}	
+
+#instagram{
+	background:url(../img/instagram@2x.png);
+	width:40px;
+	-webkit-background-size: 40px auto;  
+	-moz-background-size: 40px auto ;  
+  	background-size: 40px auto ; 
+}
+
+#facebook{
+	background:url(../img/facebook@2x.png);
+	width:40px;
+	-webkit-background-size: 40px auto;  
+	-moz-background-size: 40px auto ;  
+  	background-size: 40px auto ;
+}
+
+#twitter{
+	background:url(../img/twitter@2x.png);
+	width:40px;
+	height:40px;
+	-webkit-background-size: 40px auto;  
+	-moz-background-size: 40px auto ;  
+  	background-size: 40px auto ;
+}
+
+#googleplus{
+	background:url(../img/googleplus@2x.png);
+	width:40px;
+	height:40px;
+	-webkit-background-size: 40px auto;  
+	-moz-background-size: 40px auto ;  
+  	background-size: 40px auto ;
+}
+
+#linkedin{
+	background:url(../img/linkedin@2x.png);
+	width:40px;
+	height:40px;
+	-webkit-background-size: 40px auto;  
+	-moz-background-size: 40px auto ;  
+  	background-size: 40px auto ;
+}
+
+#gmail{
+	background:url(../img/gmail@2x.png);
+	width:40px;
+	height:40px;
+	-webkit-background-size: 40px auto;  
+	-moz-background-size: 40px auto ;  
+  	background-size: 40px auto ;
+}
+
+#heart{
+	background:url(../img/heart@2x.png) center no-repeat;
+	width:21px;
+	height:21px;
+	-webkit-background-size: 21px auto;  
+	-moz-background-size: 21px auto ;  
+  	background-size: 21px auto ;
+}
+
+#pdf{
+	background:url(../img/pdf%20icon@2x.png) top no-repeat;
+	-webkit-background-size: 25px 33px ;  
+	-moz-background-size: 25px 33px ;  
+  	background-size: 25px 33px ;  
+}
+
+#atrapor{
+	background:url(../img/atrapor@2x.jpg);	
+	width:300px;
+	height:200px;
+	-webkit-background-size: 300px 200px ;  
+	-moz-background-size: 300px 200px ;  
+  	background-size: 300px 200px ;
+}
+
+#hompor{
+	background:url(../img/hompor@2x.jpg);	
+	width:300px;
+	height:200px;
+	-webkit-background-size: 300px 200px ;  
+	-moz-background-size: 300px 200px ;  
+  	background-size: 300px 200px ;
+}
+
+#dnpor{
+	background:url(../img/dnpor@2x.jpg);	
+	width:300px;
+	height:200px;
+	-webkit-background-size: 300px 200px ;  
+	-moz-background-size: 300px 200px ;  
+  	background-size: 300px 200px ;
+}
+
+#enlightpor{
+	background:url(../img/enlightpor@2x.jpg);	
+	width:300px;
+	height:200px;
+	-webkit-background-size: 300px 200px ;  
+	-moz-background-size: 300px 200px ;  
+  	background-size: 300px 200px ;
+}
+
+#cross3{
+	background: url(../img/3crossicons@2x.jpg) left no-repeat;
+	width:100px;
+	height:52px;
+	-webkit-background-size: 100px auto ;  
+	-moz-background-size: 100px auto;  
+  	background-size: 100px auto;
+}
+
+#canon{
+	background: url(../img/cameraicon@2x.jpg) left no-repeat;
+	width:62px;
+	height:52px;
+	-webkit-background-size: auto 50px ;  
+	-moz-background-size: auto 50px;  
+  	background-size: auto 50px;
+}
+
+#yt{
+	background: url(../img/youtube@2x.jpg) left no-repeat;
+	width:52px;
+	height:52px;
+	-webkit-background-size: auto 50px ;  
+	-moz-background-size: auto 50px;  
+  	background-size: auto 50px;
+}
+
+#comp{
+	background: url(../img/comp@2x.jpg) left no-repeat;
+	width:100px;
+	height:52px;
+	-webkit-background-size: auto 50px ;  
+	-moz-background-size: auto 50px;  
+  	background-size: auto 50px;
+}
+
+.link{
+	background: url(../img/linkicon@2x.jpg) left no-repeat;
+	width:52px;
+	height:52px;
+	-webkit-background-size: 50px auto;  
+	-moz-background-size: 50px auto;  
+  	background-size: 50px auto;
+}
+
+}
